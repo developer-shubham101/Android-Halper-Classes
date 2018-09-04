@@ -1,5 +1,3 @@
-package com.arka.shubhamsharma.baseActivites;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
