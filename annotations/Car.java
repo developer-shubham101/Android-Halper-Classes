@@ -1,5 +1,3 @@
-package com.arka.shubhamsharma.annotations;
-
 public class Car {
     @JsonField("manufacturer")
     private final String make;

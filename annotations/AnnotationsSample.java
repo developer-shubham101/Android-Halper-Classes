@@ -1,5 +1,3 @@
-package com.arka.shubhamsharma.annotations;
-
 public class AnnotationsSample {
 
     protected void execute() {
