@@ -16,7 +16,7 @@ void permissionGranted();
 //Send permission's list 
 String[] listOfPermission();
 ```
-<br /><br />
+<br />
 ```
 @Override
 public String[] listOfPermission() { 
