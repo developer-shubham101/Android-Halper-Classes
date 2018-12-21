@@ -14,7 +14,7 @@ public class ImagePickerClass {
         this.activity = activity;
     }
 
-    protected void openPicker() {
+    public void openPicker() {
         Intent i = new Intent(
                 Intent.ACTION_PICK,
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -36,13 +36,13 @@ public class ImagePickerClass {
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
-            imagePickerMethod.fileUrl(picturePath);
+            imagePickerMethod.fileUrl(picturePath,selectedImage);
         }
     }
 
 
     public interface ImagePickerMethod {
-        void fileUrl(String url);
+        void fileUrl(String url,Uri uri);
 
     }
 }
